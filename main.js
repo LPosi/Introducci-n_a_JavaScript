@@ -93,8 +93,8 @@ let nota = Number(prompt("Ingrese su nota:"));
 
 if (nota >= 7) {
   console.log("Aprobado");
-} else if ((nota >= 4) & (nota <= 6)) {
+} else if (nota >= 4 && nota <= 6) {
   console.log("Regular");
-} else if (nota < 4) {
+} else {
   console.log("Desaprobado");
 }
