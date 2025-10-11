@@ -106,8 +106,30 @@ console.log("El precio final con IVA es: $" + precioFinal.toFixed(2));*/
 
 //Ejercicios 11-10-25
 
-let nombre = "Malena";
+/*let nombre = "Malena";
 let edad = 19;
 let ciudad = "Dinant";
 
-console.log("Hola, me llamo", nombre, "tengo", edad, "y vivo en", ciudad);
+console.log("Hola, me llamo", nombre, "tengo", edad, "y vivo en", ciudad);*/
+
+let precio = 2300;
+let descuento = 33.33333333333;
+
+monto_a_descontar = (precio * descuento) / 100;
+precio_final = precio - monto_a_descontar;
+
+/*console.log(`Precio final: $${precio_final.toFixed(2)}`);*/
+
+let cantidad = Number(
+  prompt(
+    "Ingresá la cantidad de leches en su variante La Serenísima descremada, larga vida x 1l:"
+  )
+);
+
+tres_por_dos = precio * 2;
+
+if (precio * 3) {
+  console.log(`Precio final: $${tres_por_dos.toFixed(2)}`);
+} else {
+  console.log(precio);
+}
