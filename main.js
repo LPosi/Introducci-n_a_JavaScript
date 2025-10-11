@@ -89,7 +89,7 @@ if (numero % 2 === 0) {
   console.log("El número es impar");
 }*/
 
-let nota = Number(prompt("Ingrese su nota:"));
+/*let nota = Number(prompt("Ingrese su nota:"));
 
 if (nota >= 7) {
   console.log("Aprobado");
@@ -97,4 +97,17 @@ if (nota >= 7) {
   console.log("Regular");
 } else {
   console.log("Desaprobado");
-}
+}*/
+
+/*let precio = Number(prompt("Ingresá el precio de tu producto:"));
+let precioFinal = precio * 1.21;
+
+console.log("El precio final con IVA es: $" + precioFinal.toFixed(2));*/
+
+//Ejercicios 11-10-25
+
+let nombre = "Malena";
+let edad = 19;
+let ciudad = "Dinant";
+
+console.log("Hola, me llamo", nombre, "tengo", edad, "y vivo en", ciudad);
