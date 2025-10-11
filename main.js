@@ -112,24 +112,63 @@ let ciudad = "Dinant";
 
 console.log("Hola, me llamo", nombre, "tengo", edad, "y vivo en", ciudad);*/
 
-let precio = 2300;
-let descuento = 33.33333333333;
+/*let precio = 2300;
+/*let descuento = 33.33333333333;*/
 
-monto_a_descontar = (precio * descuento) / 100;
-precio_final = precio - monto_a_descontar;
+/*monto_a_descontar = (precio * descuento) / 100;
+precio_final = precio - monto_a_descontar;*/
 
 /*console.log(`Precio final: $${precio_final.toFixed(2)}`);*/
 
-let cantidad = Number(
+/*let cantidad = Number(
   prompt(
-    "Ingresá la cantidad de leches en su variante La Serenísima descremada, larga vida x 1l:"
+    "Ingresá la cantidad de leches en su variante La Serenísima descremada, larga vida x 1L:"
   )
 );
+let precioFinal;
 
-tres_por_dos = precio * 2;
-
-if (precio * 3) {
-  console.log(`Precio final: $${tres_por_dos.toFixed(2)}`);
+if (isNaN(cantidad) || cantidad <= 0) {
+  console.log("Error: No has ingresado un dato válido");
 } else {
-  console.log(precio);
+  let precioFinal;
+
+  if ((cantidad = 3)) {
+    precioFinal = Math.ceil((cantidad / 3) * 2) * precio;
+    console.log(
+      `✅ Oferta 3x2 aplicada - Precio final: $${precioFinal.toFixed(2)}`
+    );
+  } else {
+    console.log(`Precio final: $${precioFinal.toFixed(2)}`);
+  }
+}
+
+console.log(`Cantidad: ${cantidad} unidades`);
+console.log(`Precio unitario: $${precio.toFixed(2)}`);
+console.log(`Oferta aplicada: 3x2`);
+console.log(`Precio final: $${precioFinal.toFixed(2)}`);
+console.log(`Ahorro: $${(cantidad * precio - precioFinal).toFixed(2)}`);*/
+
+let precio = 2300;
+let cantidad = Number(prompt("Ingresá la cantidad de leches:"));
+
+if (isNaN(cantidad) || cantidad <= 0) {
+  console.log("Error: No has ingresado una cantidad válida");
+} else {
+  let precioFinal;
+
+  if (cantidad >= 3) {
+    // Solo calcular ahorro cuando hay oferta
+    const gruposDeTres = Math.floor(cantidad / 3);
+    const productosSinOferta = cantidad % 3;
+    precioFinal = gruposDeTres * 2 * precio + productosSinOferta * precio;
+
+    const ahorro = cantidad * precio - precioFinal;
+    console.log(`✅ Oferta 3x2 - Ahorraste: $${ahorro.toFixed(2)}`);
+  } else {
+    precioFinal = cantidad * precio;
+  }
+
+  console.log(
+    `Cantidad: ${cantidad} unidades | Precio final: $${precioFinal.toFixed(2)}`
+  );
 }
