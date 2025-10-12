@@ -148,7 +148,7 @@ console.log(`Oferta aplicada: 3x2`);
 console.log(`Precio final: $${precioFinal.toFixed(2)}`);
 console.log(`Ahorro: $${(cantidad * precio - precioFinal).toFixed(2)}`);*/
 
-let precio = 2300;
+/*let precio = 2300;
 let cantidad = Number(prompt("Ingresá la cantidad de leches:"));
 
 if (isNaN(cantidad) || cantidad <= 0) {
@@ -172,3 +172,20 @@ if (isNaN(cantidad) || cantidad <= 0) {
     `Cantidad: ${cantidad} unidades | Precio final: $${precioFinal.toFixed(2)}`
   );
 }
+*/
+
+//Ejercicios 12-10-25
+
+let nombre = "Laura";
+let edad = 44;
+let ciudad = "Ciudad Autónoma de Buenos Aires";
+
+console.log(
+  "Hola, mi nombre es",
+  nombre,
+  ", tengo",
+  edad,
+  "años",
+  "y vivo en",
+  ciudad
+);
