@@ -176,7 +176,7 @@ if (isNaN(cantidad) || cantidad <= 0) {
 
 //Ejercicios 12-10-25
 
-let nombre = "Laura";
+/*let nombre = "Laura";
 let edad = 44;
 let ciudad = "Ciudad Autónoma de Buenos Aires";
 
@@ -188,4 +188,30 @@ console.log(
   "años",
   "y vivo en",
   ciudad
-);
+);*/
+
+/*let precio = 2300;
+let descuento = 25;
+
+let precioFinal = precio - (precio * descuento) / 100;
+
+console.log("El precio final es: $" + precioFinal);*/
+
+/*let edad = Number(prompt("¿Cuál es tu edad?"));
+let esMayorDeEdad = edad >= 18;
+
+if (esMayorDeEdad) {
+  console.log("Eres mayor de edad");
+} else {
+  console.log("No eres mayor de edad");
+}*/
+
+let nota = Number(prompt("Ingrese su nota (del 1 al 10)"));
+
+if (nota >= 9) {
+  console.log("Excelente");
+} else if (nota >= 6 && nota <= 8) {
+  console.log("Aprobado");
+} else {
+  console.log("Desaprobado");
+}
